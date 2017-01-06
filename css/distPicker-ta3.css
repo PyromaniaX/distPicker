@@ -1,0 +1,110 @@
+input.ta-distPicker{
+    color:#fff!important;
+    cursor:pointer!important;
+}
+input.ta-distPicker.show{
+    color:#555!important;
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+/*distPicker*/
+div[id^=dp-]{
+    position: absolute;
+    margin-left:-8px;
+    z-index: 100;
+    overflow: hidden;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+}
+/*distPicker scrollbar*/
+div[id^=dp-] ::-webkit-scrollbar {  
+  width: 14px;  
+}  
+  
+div[id^=dp-] ::-webkit-scrollbar-track,  
+div[id^=dp-] ::-webkit-scrollbar-thumb {  
+  border-radius: 999px;  
+  border: 5px solid transparent;  
+}  
+  
+div[id^=dp-] ::-webkit-scrollbar-track {  
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;  
+}  
+  
+div[id^=dp-] ::-webkit-scrollbar-thumb {  
+  box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;  
+}  
+/*distPicker>distHead*/
+ul.distHead {
+    margin: 5px 0 0 0;
+    padding: 3px 0 0 0;
+    height: 24px;
+    list-style: none;
+    overflow:hidden;
+    font-size: 14px;
+    color : #555;
+    line-height:18px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #89f0ee;
+    border: 1px solid #2cd8ba;
+    border-top-width:0;
+}
+ul.distHead li {
+    float: left;
+    margin-left: -1px;
+    padding: 0 12px;
+    color: #888;
+    background-color: #fff;
+    border-left:1px dashed #ddd;
+    cursor: default;
+}
+
+ul.distHead li.active {
+    color: #0fcbaa;
+}
+/*distPicker>distBody*/
+div.distBody {
+    background-color: #fff;
+    
+    border-radius: 3px;
+    box-shadow: 0 0 5px #89f0ee;
+    border: 1px solid #2cd8ba;
+    border-top-width:0;
+}
+
+div.distBody>div{
+    height:0;
+    overflow:hidden;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+}
+div.distBody>div.active{
+    height:100%;
+    overflow-y: auto;
+}
+
+div.distBody>div p {
+    display: inline-block;
+    margin-top: 16%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+}
+div.distBody>div a {
+    display: inline-block;
+    margin: 3px 0 3px;
+    padding: 0 6px;
+    color: #666;
+    border-radius:2px;
+    cursor: pointer;
+}
+
+div.distBody>div a:hover,div.distBody>div a.active {
+    color: #fff;
+    background-color: #0fcbaa;
+    -webkit-transition: background-color .1s linear;
+    transition: background-color .1s linear;
+}
+}
