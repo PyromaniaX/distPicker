@@ -80,4 +80,4 @@ public String distPicker() throws Exception{
 ```
 
 # 文档
-细节请查看文档[WIKI](wiki)
+细节请查看文档[WIKI](../../wiki)
