@@ -1,19 +1,19 @@
-#DistPicker
+# DistPicker
 
 
 distPicker为围绕Ta+3作了简单前端封装的三级行政区划选择插件。  
 
 插件包含前端组件,后台action层实现模版,与db层数据脚本
 
-#依赖
+# 依赖
 
 * 前端：jquery-1.7.1.min.js
 * 后台：Ta+3.12及以上
 * 数据库：执行build/distPicker.sql,生成行政区划码表数据
 
-#快速开始
+# 快速开始
 
-##前端引入分为两个版本:
+## 前端引入分为两个版本:
 
 **原生html**:
 
@@ -54,7 +54,7 @@ distPicker为围绕Ta+3作了简单前端封装的三级行政区划选择插件
 
 
 
-##后台action返回约定格式json:
+## 后台action返回约定格式json:
 
 ```java
 public String distPicker() throws Exception{
@@ -79,5 +79,5 @@ public String distPicker() throws Exception{
 }
 ```
 
-#文档
+# 文档
 细节请查看文档[WIKI](wiki)
